@@ -3,7 +3,7 @@ $(document).ready(function() {
     console.log('main.js loaded');
     paper.install(window);
     paper.setup(document.getElementById('mainCanvas'));
-    ////////////draw Circle////////////////////
+    // * draw Circle *  //
     var c = Shape.Circle(200, 200, 50);
     c.fillColor = 'green';
     var tool = new Tool();
@@ -11,6 +11,6 @@ $(document).ready(function() {
         var c = Shape.Circle(event.point, 20);
         c.fillColor = 'green';
     };
-    ///////////////////////////////////////////
+    // draw
     paper.view.draw();
 });
