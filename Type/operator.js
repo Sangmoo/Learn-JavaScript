@@ -74,3 +74,21 @@ let a, b, c;
 
 ({a, b, c} = obj); // 괄호 구분을 해야 한다.
 
+
+// Array Operator
+
+const arr = [1, 2, 3, 4, 5, 6];
+
+let [x, y, ...rest] = arr;
+x;   // 1
+y;   // 2
+rest;// [3,4,5,6]
+
+// 나머지 값들을 배열로 또 받을 수 있다.
+
+
+
+// 단축
+if(!options) options = {};
+// 위의 코드와 아래의 코드는 동일하다.
+options = options || {};
