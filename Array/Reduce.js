@@ -52,7 +52,7 @@ a = {
 const words = ["sangmoo", "blog", "me", "sangchul", "catholic", "cuk"];
 const longWords = words.reduce((a, w) => w.length > 4 ?
     a + " " + w : a, "").trim();
-console.log(longWords); // 1ilsang sangchul catholic
+console.log(longWords); // sangmoo sangchul catholic
 // 4보다 긴 문자열들만 뽑아서 하나의 string 으로 출력해 주는 모습.
 // trim() 을 사용한 이유는 최초 누적 a 가 ""라 빈칸이 생기기 때문이다.
    
