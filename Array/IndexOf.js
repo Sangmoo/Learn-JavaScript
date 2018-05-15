@@ -45,4 +45,27 @@ arr.findIndex(o => o.name === "Francis"); //1
 // find와 findIndex에 전달하는 함수는 배열의 각 요소를 첫 번째 매개변수로 받고
 // 현재 요소의 인덱스와 배열 자체도 매개변수로 받는다.
 const arr = [{ id : 5, name : "Judith" }];
-arr.find(o => o.id === 5);  //객체 {id:5, name:"Judith"} 를 반환
+arr.find(o => o.id === 5);  // 객체 {id:5, name:"Judith"} 를 반환
+
+
+
+const arr = [1, 17, 16, 5, 4, 16, 10, 3, 49];
+arr.find((x, i) => i > 2 && Number.isInteger(Math.sqrt(x))); // 4
+
+
+
+
+
+
+// some은 조건에 맞는 요소를 찾으면 즉시 검색을 멈추고 true를 반환하며, 조건에 맞는 요소를 찾지 못하면 false를 반환한다.
+const arr = [5, 6, 12, 15, 17];
+arr.some(x => x % 2 === 0); // true; 12는 짝수
+
+
+
+
+// some은 요소 중 하나만 만족하면 즉시 true를 반환한다.
+// 만약 모든 요소가 조건을 만족해야 한다면? every을 사용하면 된다.
+const arr = [5, 6, 12, 15, 17];
+arr.every(x => x % 2 === 0); // false; 12를 제외한 모든 것이 홀수
+// every은 배열의 모든 요소가 조건에 맞아야 true를 반환하며 그렇지 않다면 false를 반환한다.
