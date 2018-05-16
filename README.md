@@ -1,4 +1,4 @@
-### Learn-JavaScript
+### Learn-JavaScript - ES6
 
 * [Scope](https://github.com/Sangmoo/Learn-JavaScript/tree/master/Scope)
 * [Type](https://github.com/Sangmoo/Learn-JavaScript/tree/master/Type)
